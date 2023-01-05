@@ -7,7 +7,7 @@
 
 import Foundation
 
-var stories: [Story] = [
+var storiesData: [Story] = [
     Story(username: "oguzhankaymakk", imagePath: "https://www.oguzhankaymak.net/oguzhankaymak.jpg"),
     Story(username: "oguzhankaymakk", imagePath: "https://www.oguzhankaymak.net/oguzhankaymak.jpg"),
     Story(username: "oguzhankaymakk", imagePath: "https://www.oguzhankaymak.net/oguzhankaymak.jpg"),
@@ -16,12 +16,13 @@ var stories: [Story] = [
     Story(username: "oguzhankaymakk", imagePath: "https://www.oguzhankaymak.net/oguzhankaymak.jpg")
 ]
 
-var posts: [Post] = [
+var postsData: [Post] = [
     Post(
         username: "oguzhankaymakk",
         profileImagePath: "https://www.oguzhankaymak.net/oguzhankaymak.jpg",
         imagePath: "https://www.oguzhankaymak.net/oguzhankaymak.jpg",
         likeCount: 50,
+        commentCount: 80,
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         dateDesc: "30 min ago"
     ),
@@ -30,6 +31,7 @@ var posts: [Post] = [
         profileImagePath: "https://www.oguzhankaymak.net/oguzhankaymak.jpg",
         imagePath: "https://www.oguzhankaymak.net/oguzhankaymak.jpg",
         likeCount: 70,
+        commentCount: 20,
         description: """
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -42,6 +44,7 @@ var posts: [Post] = [
         profileImagePath: "https://www.oguzhankaymak.net/oguzhankaymak.jpg",
         imagePath: "https://www.oguzhankaymak.net/oguzhankaymak.jpg",
         likeCount: 126,
+        commentCount: 20,
         description: """
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -57,6 +60,7 @@ var posts: [Post] = [
         profileImagePath: "https://www.oguzhankaymak.net/oguzhankaymak.jpg",
         imagePath: "https://www.oguzhankaymak.net/oguzhankaymak.jpg",
         likeCount: 126,
+        commentCount: 20,
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         dateDesc: "2 hour ago"
     )

@@ -12,6 +12,7 @@ struct Post {
     let profileImagePath: String
     let imagePath: String
     let likeCount: Int
+    let commentCount: Int
     let description: String
     let dateDesc: String
 }

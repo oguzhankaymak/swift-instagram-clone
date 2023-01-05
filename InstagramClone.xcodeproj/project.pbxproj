@@ -17,6 +17,9 @@
 		E2567CDD29673DFF00E856D7 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CDC29673DFF00E856D7 /* ReelsViewController.swift */; };
 		E2567CDF29673E2500E856D7 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CDE29673E2500E856D7 /* ShopViewController.swift */; };
 		E2567CE129673E5600E856D7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CE029673E5600E856D7 /* ProfileViewController.swift */; };
+		E2567CE52967416500E856D7 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CE42967416500E856D7 /* Story.swift */; };
+		E2567CE72967416F00E856D7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CE62967416F00E856D7 /* Post.swift */; };
+		E2567CEA2967429100E856D7 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CE92967429100E856D7 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		E2567CDC29673DFF00E856D7 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
 		E2567CDE29673E2500E856D7 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		E2567CE029673E5600E856D7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E2567CE42967416500E856D7 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		E2567CE62967416F00E856D7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E2567CE92967429100E856D7 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,8 @@
 		E2567CBE296731D100E856D7 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				E2567CE82967428900E856D7 /* Data */,
+				E2567CE32967415400E856D7 /* Models */,
 				E2567CD429673C7F00E856D7 /* Controllers */,
 				E2567CBF296731D100E856D7 /* AppDelegate.swift */,
 				E2567CC1296731D100E856D7 /* SceneDelegate.swift */,
@@ -93,6 +101,23 @@
 				E2567CE029673E5600E856D7 /* ProfileViewController.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		E2567CE32967415400E856D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2567CE42967416500E856D7 /* Story.swift */,
+				E2567CE62967416F00E856D7 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E2567CE82967428900E856D7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E2567CE92967429100E856D7 /* Data.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,10 +216,13 @@
 				E2567CD929673D4B00E856D7 /* HomeViewController.swift in Sources */,
 				E2567CD729673CBC00E856D7 /* MainTabbarViewController.swift in Sources */,
 				E2567CC0296731D100E856D7 /* AppDelegate.swift in Sources */,
+				E2567CEA2967429100E856D7 /* Data.swift in Sources */,
 				E2567CDD29673DFF00E856D7 /* ReelsViewController.swift in Sources */,
 				E2567CDF29673E2500E856D7 /* ShopViewController.swift in Sources */,
 				E2567CE129673E5600E856D7 /* ProfileViewController.swift in Sources */,
 				E2567CC2296731D100E856D7 /* SceneDelegate.swift in Sources */,
+				E2567CE52967416500E856D7 /* Story.swift in Sources */,
+				E2567CE72967416F00E856D7 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

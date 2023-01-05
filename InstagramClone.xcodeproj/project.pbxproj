@@ -9,19 +9,29 @@
 /* Begin PBXBuildFile section */
 		E2567CC0296731D100E856D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CBF296731D100E856D7 /* AppDelegate.swift */; };
 		E2567CC2296731D100E856D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CC1296731D100E856D7 /* SceneDelegate.swift */; };
-		E2567CC4296731D100E856D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CC3296731D100E856D7 /* ViewController.swift */; };
 		E2567CC9296731D200E856D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2567CC8296731D200E856D7 /* Assets.xcassets */; };
 		E2567CCC296731D200E856D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2567CCA296731D200E856D7 /* LaunchScreen.storyboard */; };
+		E2567CD729673CBC00E856D7 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CD629673CBC00E856D7 /* MainTabbarViewController.swift */; };
+		E2567CD929673D4B00E856D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CD829673D4B00E856D7 /* HomeViewController.swift */; };
+		E2567CDB29673D8300E856D7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CDA29673D8300E856D7 /* SearchViewController.swift */; };
+		E2567CDD29673DFF00E856D7 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CDC29673DFF00E856D7 /* ReelsViewController.swift */; };
+		E2567CDF29673E2500E856D7 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CDE29673E2500E856D7 /* ShopViewController.swift */; };
+		E2567CE129673E5600E856D7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CE029673E5600E856D7 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E2567CBC296731D100E856D7 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2567CBF296731D100E856D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2567CC1296731D100E856D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E2567CC3296731D100E856D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2567CC8296731D200E856D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2567CCB296731D200E856D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2567CCD296731D200E856D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2567CD629673CBC00E856D7 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
+		E2567CD829673D4B00E856D7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E2567CDA29673D8300E856D7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E2567CDC29673DFF00E856D7 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
+		E2567CDE29673E2500E856D7 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		E2567CE029673E5600E856D7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,35 @@
 		E2567CBE296731D100E856D7 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				E2567CD429673C7F00E856D7 /* Controllers */,
 				E2567CBF296731D100E856D7 /* AppDelegate.swift */,
 				E2567CC1296731D100E856D7 /* SceneDelegate.swift */,
-				E2567CC3296731D100E856D7 /* ViewController.swift */,
 				E2567CC8296731D200E856D7 /* Assets.xcassets */,
 				E2567CCA296731D200E856D7 /* LaunchScreen.storyboard */,
 				E2567CCD296731D200E856D7 /* Info.plist */,
 			);
 			path = InstagramClone;
+			sourceTree = "<group>";
+		};
+		E2567CD429673C7F00E856D7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2567CD529673C8D00E856D7 /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E2567CD529673C8D00E856D7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E2567CD629673CBC00E856D7 /* MainTabbarViewController.swift */,
+				E2567CD829673D4B00E856D7 /* HomeViewController.swift */,
+				E2567CDA29673D8300E856D7 /* SearchViewController.swift */,
+				E2567CDC29673DFF00E856D7 /* ReelsViewController.swift */,
+				E2567CDE29673E2500E856D7 /* ShopViewController.swift */,
+				E2567CE029673E5600E856D7 /* ProfileViewController.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2567CC4296731D100E856D7 /* ViewController.swift in Sources */,
+				E2567CDB29673D8300E856D7 /* SearchViewController.swift in Sources */,
+				E2567CD929673D4B00E856D7 /* HomeViewController.swift in Sources */,
+				E2567CD729673CBC00E856D7 /* MainTabbarViewController.swift in Sources */,
 				E2567CC0296731D100E856D7 /* AppDelegate.swift in Sources */,
+				E2567CDD29673DFF00E856D7 /* ReelsViewController.swift in Sources */,
+				E2567CDF29673E2500E856D7 /* ShopViewController.swift in Sources */,
+				E2567CE129673E5600E856D7 /* ProfileViewController.swift in Sources */,
 				E2567CC2296731D100E856D7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

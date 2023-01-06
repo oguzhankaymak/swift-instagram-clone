@@ -1,7 +1,7 @@
 # swift-instagram-clone
 
-I wanted to create a sample instagram clone app to improve myself and try different things. I did't search same icons I just use SF symbols icons so maybe icons little bit different.
-Project didn't complete yet, I am continuing.
+I wanted to create a sample instagram clone app to improve myself and try different things. I did't search same icons I just use SF symbols icons so maybe icons little bit different. <br/> <br/>
+> **Project didn't complete yet, I continue to developing.**
 
 #### Some Packages / Libraries
 - [SDWebImage](https://github.com/SDWebImage/SDWebImage) <br />

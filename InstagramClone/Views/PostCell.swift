@@ -14,7 +14,7 @@ class PostCell: UICollectionViewCell {
     private lazy var containerView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = Color.backgroundColor
         return view
     }()
 
@@ -29,8 +29,8 @@ class PostCell: UICollectionViewCell {
     private lazy var usernameLabel: UILabel = {
         var label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 14, weight: .bold)
-        label.textColor = .label
+        label.font = AppFont.postTitle
+        label.textColor = Color.label
         return label
     }()
 
@@ -40,7 +40,7 @@ class PostCell: UICollectionViewCell {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(iconImage, for: .normal)
-        button.tintColor = .systemGray
+        button.tintColor = Color.gray
         return button
     }()
 
@@ -56,7 +56,7 @@ class PostCell: UICollectionViewCell {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(iconImage, for: .normal)
-        button.tintColor = .label
+        button.tintColor = Color.label
         return button
     }()
 
@@ -69,42 +69,42 @@ class PostCell: UICollectionViewCell {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(iconImage, for: .normal)
-        button.tintColor = .label
+        button.tintColor = Color.label
         return button
     }()
 
     private lazy var shareButton: UIButton = {
-        let iconImage = UIImage(systemName: "location", withConfiguration: UIImage.SymbolConfiguration(pointSize: 18))
+        let iconImage = UIImage(systemName: "paperplane", withConfiguration: UIImage.SymbolConfiguration(pointSize: 18))
 
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(iconImage, for: .normal)
-        button.tintColor = .label
+        button.tintColor = Color.label
         return button
     }()
 
     private lazy var bookmarkButton: UIButton = {
-        let iconImage = UIImage(systemName: "bookmark", withConfiguration: UIImage.SymbolConfiguration(pointSize: 16))
+        let iconImage = UIImage(systemName: "bookmark", withConfiguration: UIImage.SymbolConfiguration(pointSize: 18))
 
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(iconImage, for: .normal)
-        button.tintColor = .label
+        button.tintColor = Color.label
         return button
     }()
 
     private lazy var likeCountLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 14, weight: .bold)
-        label.textColor = .label
+        label.font = AppFont.postTitle
+        label.textColor = Color.label
         return label
     }()
 
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .label
+        label.textColor = Color.label
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
         label.sizeToFit()
@@ -114,16 +114,16 @@ class PostCell: UICollectionViewCell {
     private lazy var showCommentButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitleColor(.systemGray, for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 14, weight: .regular)
+        button.setTitleColor(Color.gray, for: .normal)
+        button.titleLabel?.font = AppFont.postText
         return button
     }()
 
     private lazy var dateLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 12, weight: .regular)
-        label.textColor = .systemGray
+        label.font = AppFont.postSmallText
+        label.textColor = Color.gray
         return label
     }()
 
@@ -181,14 +181,14 @@ extension PostCell {
     private func boldText(string: String) -> NSMutableAttributedString {
         return NSMutableAttributedString(
             string: string,
-            attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12, weight: .bold)]
+            attributes: [NSAttributedString.Key.font: AppFont.postSmallBoldText]
         )
     }
 
     private func regularText(string: String) -> NSMutableAttributedString {
         return NSMutableAttributedString(
             string: string,
-            attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12, weight: .regular)]
+            attributes: [NSAttributedString.Key.font: AppFont.postSmallText]
         )
     }
 
@@ -221,7 +221,7 @@ extension PostCell {
             postImageView.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 8),
             postImageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
             postImageView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
-            postImageView.heightAnchor.constraint(equalToConstant: 270)
+            postImageView.heightAnchor.constraint(equalToConstant: 300)
         ]
 
         let likeButtonConstraints: [NSLayoutConstraint] = [

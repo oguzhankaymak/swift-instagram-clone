@@ -18,13 +18,13 @@ class StoryCell: UICollectionViewCell {
         imageView.layer.cornerRadius = 56/2
         imageView.clipsToBounds = true
         imageView.layer.masksToBounds = true
-        imageView.layer.borderColor = UIColor.link.cgColor
+        imageView.layer.borderColor = BorderColor.story
         return imageView
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.backgroundColor = .systemBackground
+        contentView.backgroundColor = Color.backgroundColor
         addUIElements()
         configureConstraints()
     }

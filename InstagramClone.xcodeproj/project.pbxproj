@@ -24,6 +24,9 @@
 		E2567CF0296746F900E856D7 /* CompositionalLayoutSectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CEF296746F900E856D7 /* CompositionalLayoutSectionHelper.swift */; };
 		E2567CF4296747F500E856D7 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CF2296747F500E856D7 /* PostCell.swift */; };
 		E2567CF5296747F500E856D7 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CF3296747F500E856D7 /* StoryCell.swift */; };
+		E26C3BAF2968401200ADEC57 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C3BAE2968401200ADEC57 /* Color.swift */; };
+		E26C3BB12968402400ADEC57 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C3BB02968402400ADEC57 /* Font.swift */; };
+		E26C3BB4296840DD00ADEC57 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C3BB3296840DD00ADEC57 /* Layer.swift */; };
 		E2DA5709296755C7007E2E25 /* StoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA5708296755C6007E2E25 /* StoryCellViewModel.swift */; };
 		E2E9F89329676208004111C1 /* PostCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9F89229676208004111C1 /* PostCellViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +53,9 @@
 		E2567CEF296746F900E856D7 /* CompositionalLayoutSectionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutSectionHelper.swift; sourceTree = "<group>"; };
 		E2567CF2296747F500E856D7 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		E2567CF3296747F500E856D7 /* StoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		E26C3BAE2968401200ADEC57 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E26C3BB02968402400ADEC57 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		E26C3BB3296840DD00ADEC57 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 		E2DA5708296755C6007E2E25 /* StoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCellViewModel.swift; sourceTree = "<group>"; };
 		E2E9F89229676208004111C1 /* PostCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +110,7 @@
 		E2567CBE296731D100E856D7 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				E26C3BAD29683FFC00ADEC57 /* Theme */,
 				E2DA5707296755B6007E2E25 /* ViewModels */,
 				E2567CF1296747EC00E856D7 /* Views */,
 				E2567CEE296746DD00E856D7 /* Helpers */,
@@ -172,6 +179,16 @@
 				E2567CF3296747F500E856D7 /* StoryCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E26C3BAD29683FFC00ADEC57 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				E26C3BAE2968401200ADEC57 /* Color.swift */,
+				E26C3BB02968402400ADEC57 /* Font.swift */,
+				E26C3BB3296840DD00ADEC57 /* Layer.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		E2DA5707296755B6007E2E25 /* ViewModels */ = {
@@ -320,6 +337,8 @@
 				E2567CD929673D4B00E856D7 /* HomeViewController.swift in Sources */,
 				E2567CF4296747F500E856D7 /* PostCell.swift in Sources */,
 				E2567CF5296747F500E856D7 /* StoryCell.swift in Sources */,
+				E26C3BB4296840DD00ADEC57 /* Layer.swift in Sources */,
+				E26C3BAF2968401200ADEC57 /* Color.swift in Sources */,
 				E2E9F89329676208004111C1 /* PostCellViewModel.swift in Sources */,
 				E2567CD729673CBC00E856D7 /* MainTabbarViewController.swift in Sources */,
 				E2567CC0296731D100E856D7 /* AppDelegate.swift in Sources */,
@@ -329,6 +348,7 @@
 				E2567CDD29673DFF00E856D7 /* ReelsViewController.swift in Sources */,
 				E2567CDF29673E2500E856D7 /* ShopViewController.swift in Sources */,
 				E2567CE129673E5600E856D7 /* ProfileViewController.swift in Sources */,
+				E26C3BB12968402400ADEC57 /* Font.swift in Sources */,
 				E2567CC2296731D100E856D7 /* SceneDelegate.swift in Sources */,
 				E2567CE52967416500E856D7 /* Story.swift in Sources */,
 				E2567CE72967416F00E856D7 /* Post.swift in Sources */,
@@ -478,6 +498,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,6 +527,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

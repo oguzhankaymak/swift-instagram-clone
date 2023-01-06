@@ -22,13 +22,13 @@ class HomeViewController: UIViewController {
 
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.backgroundColor = .systemBackground
+        collectionView.backgroundColor = Color.backgroundColor
         return collectionView
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = Color.backgroundColor
         addUIElements()
         configureNavigationBar()
         configureCollectionView()
@@ -47,9 +47,9 @@ extension HomeViewController {
         navigationController?.navigationBar.backgroundColor = .systemBackground
 
         let label = UILabel()
-        label.textColor = .label
+        label.textColor = Color.label
         label.text = "Instagram"
-        label.font = .systemFont(ofSize: 26, weight: .bold)
+        label.font = AppFont.navigationTitle
 
         navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
 
@@ -89,7 +89,7 @@ extension HomeViewController {
             action: #selector(console)
         )
 
-        navigationItem.rightBarButtonItems = [plusBarButtonItem, heartBarButtonItem, messageBarButtonItem]
+        navigationItem.rightBarButtonItems = [messageBarButtonItem, heartBarButtonItem, plusBarButtonItem ]
     }
 
     @objc private func console() {

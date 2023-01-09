@@ -221,7 +221,7 @@ extension PostCell {
             postImageView.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 8),
             postImageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
             postImageView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
-            postImageView.heightAnchor.constraint(equalToConstant: 300)
+            postImageView.heightAnchor.constraint(equalToConstant: contentView.frame.width * 0.8)
         ]
 
         let likeButtonConstraints: [NSLayoutConstraint] = [

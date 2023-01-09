@@ -14,7 +14,9 @@ class HomeViewController: UIViewController {
             case 0:
                 return CompositionalLayoutSectionHelper.createStoriesSection()
             case 1:
-                return CompositionalLayoutSectionHelper.createPostsSection()
+                return CompositionalLayoutSectionHelper.createPostsSection(
+                    with: CGFloat(self.view.frame.size.height - 200)
+                )
             default:
                 return nil
             }

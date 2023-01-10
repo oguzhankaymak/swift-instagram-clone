@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		77A7A801E12E04132A017E1C /* Pods_InstagramClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83DBB52187F65B7B89F1C31 /* Pods_InstagramClone.framework */; };
+		E204C9D8296C9995003F2CE9 /* DiscoverImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204C9D7296C9995003F2CE9 /* DiscoverImageCell.swift */; };
 		E2567CC0296731D100E856D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CBF296731D100E856D7 /* AppDelegate.swift */; };
 		E2567CC2296731D100E856D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CC1296731D100E856D7 /* SceneDelegate.swift */; };
 		E2567CC9296731D200E856D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2567CC8296731D200E856D7 /* Assets.xcassets */; };
@@ -27,6 +28,11 @@
 		E26C3BAF2968401200ADEC57 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C3BAE2968401200ADEC57 /* Color.swift */; };
 		E26C3BB12968402400ADEC57 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C3BB02968402400ADEC57 /* Font.swift */; };
 		E26C3BB4296840DD00ADEC57 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C3BB3296840DD00ADEC57 /* Layer.swift */; };
+		E26EA2BF296DC92600EB47A8 /* DiscoverVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26EA2BE296DC92600EB47A8 /* DiscoverVideoCell.swift */; };
+		E26EA2C1296DCC1800EB47A8 /* DiscoverVideoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26EA2C0296DCC1800EB47A8 /* DiscoverVideoCellViewModel.swift */; };
+		E26EA2C3296DCC2500EB47A8 /* DiscoverImageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26EA2C2296DCC2500EB47A8 /* DiscoverImageCellViewModel.swift */; };
+		E26EA2C5296DCDF000EB47A8 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26EA2C4296DCDF000EB47A8 /* Discover.swift */; };
+		E26EA2C7296DCE2800EB47A8 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26EA2C6296DCE2800EB47A8 /* ContentType.swift */; };
 		E2DA5709296755C7007E2E25 /* StoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA5708296755C6007E2E25 /* StoryCellViewModel.swift */; };
 		E2E9F89329676208004111C1 /* PostCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9F89229676208004111C1 /* PostCellViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +41,7 @@
 		9A9B3FB77E11ED26A8CEF316 /* Pods-InstagramClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramClone.debug.xcconfig"; path = "Target Support Files/Pods-InstagramClone/Pods-InstagramClone.debug.xcconfig"; sourceTree = "<group>"; };
 		A810F9815408EA95B949F84A /* Pods-InstagramClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramClone.release.xcconfig"; path = "Target Support Files/Pods-InstagramClone/Pods-InstagramClone.release.xcconfig"; sourceTree = "<group>"; };
 		D83DBB52187F65B7B89F1C31 /* Pods_InstagramClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E204C9D7296C9995003F2CE9 /* DiscoverImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverImageCell.swift; sourceTree = "<group>"; };
 		E2567CBC296731D100E856D7 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2567CBF296731D100E856D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2567CC1296731D100E856D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +63,11 @@
 		E26C3BAE2968401200ADEC57 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		E26C3BB02968402400ADEC57 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		E26C3BB3296840DD00ADEC57 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
+		E26EA2BE296DC92600EB47A8 /* DiscoverVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVideoCell.swift; sourceTree = "<group>"; };
+		E26EA2C0296DCC1800EB47A8 /* DiscoverVideoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVideoCellViewModel.swift; sourceTree = "<group>"; };
+		E26EA2C2296DCC2500EB47A8 /* DiscoverImageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverImageCellViewModel.swift; sourceTree = "<group>"; };
+		E26EA2C4296DCDF000EB47A8 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
+		E26EA2C6296DCE2800EB47A8 /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
 		E2DA5708296755C6007E2E25 /* StoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCellViewModel.swift; sourceTree = "<group>"; };
 		E2E9F89229676208004111C1 /* PostCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +164,8 @@
 			children = (
 				E2567CE42967416500E856D7 /* Story.swift */,
 				E2567CE62967416F00E856D7 /* Post.swift */,
+				E26EA2C4296DCDF000EB47A8 /* Discover.swift */,
+				E26EA2C6296DCE2800EB47A8 /* ContentType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +189,8 @@
 		E2567CF1296747EC00E856D7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E204C9D7296C9995003F2CE9 /* DiscoverImageCell.swift */,
+				E26EA2BE296DC92600EB47A8 /* DiscoverVideoCell.swift */,
 				E2567CF2296747F500E856D7 /* PostCell.swift */,
 				E2567CF3296747F500E856D7 /* StoryCell.swift */,
 			);
@@ -196,6 +212,8 @@
 			children = (
 				E2DA5708296755C6007E2E25 /* StoryCellViewModel.swift */,
 				E2E9F89229676208004111C1 /* PostCellViewModel.swift */,
+				E26EA2C0296DCC1800EB47A8 /* DiscoverVideoCellViewModel.swift */,
+				E26EA2C2296DCC2500EB47A8 /* DiscoverImageCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -333,22 +351,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26EA2C1296DCC1800EB47A8 /* DiscoverVideoCellViewModel.swift in Sources */,
 				E2567CDB29673D8300E856D7 /* SearchViewController.swift in Sources */,
 				E2567CD929673D4B00E856D7 /* HomeViewController.swift in Sources */,
 				E2567CF4296747F500E856D7 /* PostCell.swift in Sources */,
 				E2567CF5296747F500E856D7 /* StoryCell.swift in Sources */,
+				E26EA2BF296DC92600EB47A8 /* DiscoverVideoCell.swift in Sources */,
 				E26C3BB4296840DD00ADEC57 /* Layer.swift in Sources */,
+				E26EA2C3296DCC2500EB47A8 /* DiscoverImageCellViewModel.swift in Sources */,
+				E26EA2C5296DCDF000EB47A8 /* Discover.swift in Sources */,
 				E26C3BAF2968401200ADEC57 /* Color.swift in Sources */,
 				E2E9F89329676208004111C1 /* PostCellViewModel.swift in Sources */,
 				E2567CD729673CBC00E856D7 /* MainTabbarViewController.swift in Sources */,
 				E2567CC0296731D100E856D7 /* AppDelegate.swift in Sources */,
 				E2DA5709296755C7007E2E25 /* StoryCellViewModel.swift in Sources */,
 				E2567CEA2967429100E856D7 /* Data.swift in Sources */,
+				E26EA2C7296DCE2800EB47A8 /* ContentType.swift in Sources */,
 				E2567CF0296746F900E856D7 /* CompositionalLayoutSectionHelper.swift in Sources */,
 				E2567CDD29673DFF00E856D7 /* ReelsViewController.swift in Sources */,
 				E2567CDF29673E2500E856D7 /* ShopViewController.swift in Sources */,
 				E2567CE129673E5600E856D7 /* ProfileViewController.swift in Sources */,
 				E26C3BB12968402400ADEC57 /* Font.swift in Sources */,
+				E204C9D8296C9995003F2CE9 /* DiscoverImageCell.swift in Sources */,
 				E2567CC2296731D100E856D7 /* SceneDelegate.swift in Sources */,
 				E2567CE52967416500E856D7 /* Story.swift in Sources */,
 				E2567CE72967416F00E856D7 /* Post.swift in Sources */,
@@ -496,8 +520,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -525,8 +548,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

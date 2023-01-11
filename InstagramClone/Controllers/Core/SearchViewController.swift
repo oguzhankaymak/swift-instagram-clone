@@ -15,20 +15,19 @@ class SearchViewController: UIViewController {
 
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.backgroundColor = .systemBackground
+        collectionView.backgroundColor = Color.backgroundColor
         return collectionView
     }()
 
     private let searchController: UISearchController = {
-        let controller = UISearchController()
+        let controller = UISearchController(searchResultsController: SearchResultViewController())
         controller.searchBar.placeholder = "Search"
-        controller.searchBar.searchBarStyle = .minimal
         return controller
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.searchController = searchController
+        configureNavigationBar()
         addUIElements()
         configureCollectionView()
         configureConstraints()
@@ -38,6 +37,17 @@ class SearchViewController: UIViewController {
         view.addSubview(collectionView)
     }
 
+}
+
+// MARK: - configureNavigationBar
+extension SearchViewController {
+    private func configureNavigationBar() {
+        navigationItem.searchController = searchController
+        searchController.searchResultsUpdater = self
+        if #available(iOS 16.0, *) {
+            navigationItem.preferredSearchBarPlacement = .stacked
+        }
+    }
 }
 
 // MARK: - configureCollectionView
@@ -91,6 +101,31 @@ extension SearchViewController: UICollectionViewDataSource {
             return cell
         }
 
+    }
+}
+
+extension SearchViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchBar = searchController.searchBar
+        guard let searchText = searchBar.text,
+            let searchResultViewController = searchController.searchResultsController as? SearchResultViewController
+        else {
+            return
+        }
+
+        if (!searchText.trimmingCharacters(in: .whitespaces).isEmpty &&
+             searchText.trimmingCharacters(in: .whitespaces).count >= 3) {
+
+            searchResultViewController.searchedUsers = usersData.filter({ user in
+                return user.username.lowercased().contains(searchText.lowercased()) ||
+                user.nameSurname.lowercased().contains(searchText.lowercased())
+            })
+
+            searchResultViewController.collectionView.reloadData()
+        } else {
+            searchResultViewController.searchedUsers.removeAll()
+            searchResultViewController.collectionView.reloadData()
+        }
     }
 }
 

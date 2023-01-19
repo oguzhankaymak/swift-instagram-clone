@@ -33,6 +33,11 @@ class SearchViewController: UIViewController {
         configureConstraints()
     }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        collectionView.reloadData()
+    }
+
     private func addUIElements() {
         view.addSubview(collectionView)
     }
@@ -54,6 +59,7 @@ extension SearchViewController {
 extension SearchViewController {
     private func configureCollectionView() {
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.register(DiscoverImageCell.self, forCellWithReuseIdentifier: DiscoverImageCell.identifier)
         collectionView.register(DiscoverVideoCell.self, forCellWithReuseIdentifier: DiscoverVideoCell.identifier)
     }
@@ -97,13 +103,40 @@ extension SearchViewController: UICollectionViewDataSource {
 
             }
 
-            cell.configure(with: DiscoverVideoCellViewModel(videoPath: discoverData.contentPath))
             return cell
         }
-
     }
 }
 
+extension SearchViewController: UICollectionViewDelegate {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        willDisplay cell: UICollectionViewCell,
+        forItemAt indexPath: IndexPath
+    ) {
+
+        let discoverData = discoversData[indexPath.row]
+
+        switch discoverData.contentType {
+        case .image:
+            break
+        case .video:
+            if let videoUrl = URL(string: discoverData.contentPath) {
+                (cell as? DiscoverVideoCell)?.createVideoPlayer(with: videoUrl)
+            }
+        }
+    }
+
+    func collectionView(
+        _ collectionView: UICollectionView,
+        didEndDisplaying cell: UICollectionViewCell,
+        forItemAt indexPath: IndexPath
+    ) {
+        (cell as? DiscoverVideoCell)?.removeVideoPlayer()
+    }
+}
+
+// MARK: - UpdateSearchResults
 extension SearchViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         let searchBar = searchController.searchBar

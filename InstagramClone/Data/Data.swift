@@ -63,11 +63,11 @@ var discoversData: [Discover] = [
         contentType: .image
     ),
     Discover(
-        contentPath: "https://user-images.githubusercontent.com/36153454/211622448-40035878-4105-4f7e-b299-3a6cf8997212.mov",
+        contentPath: "https://user-images.githubusercontent.com/36153454/213465335-8b5be25d-bc01-4ab8-8832-4fd10731d0ec.MOV",
         contentType: .video
     ),
     Discover(
-        contentPath: "https://www.oguzhankaymak.net/oguzhankaymak.jpg",
+        contentPath: "https://user-images.githubusercontent.com/36153454/213490283-4ea53010-b9da-49cd-bbd6-ea31209ae6ae.JPG",
         contentType: .image
     ),
     Discover(
@@ -79,9 +79,25 @@ var discoversData: [Discover] = [
         contentType: .image
     ),
     Discover(
-        contentPath: "https://user-images.githubusercontent.com/36153454/211622448-40035878-4105-4f7e-b299-3a6cf8997212.mov",
+        contentPath: "https://user-images.githubusercontent.com/36153454/212050262-374e8471-1718-45fa-8601-5a1b70313392.mov",
         contentType: .video
-    )
+    ),
+    Discover(
+        contentPath: "https://user-images.githubusercontent.com/36153454/213490283-4ea53010-b9da-49cd-bbd6-ea31209ae6ae.JPG",
+        contentType: .image
+    ),
+    Discover(
+        contentPath: "https://user-images.githubusercontent.com/36153454/211616308-f53cd63f-16ff-44d9-ab12-a8959d10e74f.JPG",
+        contentType: .image
+    ),
+    Discover(
+        contentPath: "https://user-images.githubusercontent.com/36153454/211616308-f53cd63f-16ff-44d9-ab12-a8959d10e74f.JPG",
+        contentType: .image
+    ),
+    Discover(
+        contentPath: "https://user-images.githubusercontent.com/36153454/213465335-8b5be25d-bc01-4ab8-8832-4fd10731d0ec.MOV",
+        contentType: .video
+    ),
 ]
 
 var usersData: [User] = [

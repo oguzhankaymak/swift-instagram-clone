@@ -161,6 +161,7 @@ class ReelCell: UICollectionViewCell {
     }
 
     public func createVideoPlayer(with videoURL: URL) {
+        contentView.addSubview(activityIndicatorView)
         activityIndicatorView.startAnimating()
         let asset: AVAsset = AVAsset(url: videoURL)
         let playerItem = AVPlayerItem(asset: asset)
@@ -199,7 +200,6 @@ class ReelCell: UICollectionViewCell {
     }
 
     private func addUIElements() {
-        contentView.addSubview(activityIndicatorView)
         contentView.addSubview(operationsView)
         operationsView.addSubview(cameraButton)
         operationsView.addSubview(likeButton)

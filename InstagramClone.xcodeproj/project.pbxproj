@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		77A7A801E12E04132A017E1C /* Pods_InstagramClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83DBB52187F65B7B89F1C31 /* Pods_InstagramClone.framework */; };
 		E204C9D8296C9995003F2CE9 /* DiscoverImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204C9D7296C9995003F2CE9 /* DiscoverImageCell.swift */; };
+		E2519353297686D0005E286F /* ReelCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2519352297686D0005E286F /* ReelCellViewModel.swift */; };
+		E255C1FE2972E00100263E1C /* ReelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255C1FD2972E00100263E1C /* ReelCell.swift */; };
 		E2567CC0296731D100E856D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CBF296731D100E856D7 /* AppDelegate.swift */; };
 		E2567CC2296731D100E856D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CC1296731D100E856D7 /* SceneDelegate.swift */; };
 		E2567CC9296731D200E856D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2567CC8296731D200E856D7 /* Assets.xcassets */; };
@@ -25,6 +27,7 @@
 		E2567CF0296746F900E856D7 /* CompositionalLayoutSectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CEF296746F900E856D7 /* CompositionalLayoutSectionHelper.swift */; };
 		E2567CF4296747F500E856D7 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CF2296747F500E856D7 /* PostCell.swift */; };
 		E2567CF5296747F500E856D7 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CF3296747F500E856D7 /* StoryCell.swift */; };
+		E266718E297985CA00982D68 /* Reel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E266718D297985CA00982D68 /* Reel.swift */; };
 		E26C3BAF2968401200ADEC57 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C3BAE2968401200ADEC57 /* Color.swift */; };
 		E26C3BB12968402400ADEC57 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C3BB02968402400ADEC57 /* Font.swift */; };
 		E26C3BB4296840DD00ADEC57 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C3BB3296840DD00ADEC57 /* Layer.swift */; };
@@ -46,6 +49,8 @@
 		A810F9815408EA95B949F84A /* Pods-InstagramClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramClone.release.xcconfig"; path = "Target Support Files/Pods-InstagramClone/Pods-InstagramClone.release.xcconfig"; sourceTree = "<group>"; };
 		D83DBB52187F65B7B89F1C31 /* Pods_InstagramClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E204C9D7296C9995003F2CE9 /* DiscoverImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverImageCell.swift; sourceTree = "<group>"; };
+		E2519352297686D0005E286F /* ReelCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelCellViewModel.swift; sourceTree = "<group>"; };
+		E255C1FD2972E00100263E1C /* ReelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelCell.swift; sourceTree = "<group>"; };
 		E2567CBC296731D100E856D7 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2567CBF296731D100E856D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2567CC1296731D100E856D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 		E2567CEF296746F900E856D7 /* CompositionalLayoutSectionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutSectionHelper.swift; sourceTree = "<group>"; };
 		E2567CF2296747F500E856D7 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		E2567CF3296747F500E856D7 /* StoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		E266718D297985CA00982D68 /* Reel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reel.swift; sourceTree = "<group>"; };
 		E26C3BAE2968401200ADEC57 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		E26C3BB02968402400ADEC57 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		E26C3BB3296840DD00ADEC57 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
@@ -176,6 +182,7 @@
 				E26EA2C4296DCDF000EB47A8 /* Discover.swift */,
 				E26EA2C6296DCE2800EB47A8 /* ContentType.swift */,
 				E29B5865296EC68700D3605F /* User.swift */,
+				E266718D297985CA00982D68 /* Reel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,6 +211,7 @@
 				E2567CF2296747F500E856D7 /* PostCell.swift */,
 				E2567CF3296747F500E856D7 /* StoryCell.swift */,
 				E29B5863296EB5E900D3605F /* SearchResultCell.swift */,
+				E255C1FD2972E00100263E1C /* ReelCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +242,7 @@
 				E26EA2C0296DCC1800EB47A8 /* DiscoverVideoCellViewModel.swift */,
 				E26EA2C2296DCC2500EB47A8 /* DiscoverImageCellViewModel.swift */,
 				E29B5867296EC6EA00D3605F /* SearchResultCellViewModel.swift */,
+				E2519352297686D0005E286F /* ReelCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -377,8 +386,11 @@
 				E2567CF4296747F500E856D7 /* PostCell.swift in Sources */,
 				E2567CF5296747F500E856D7 /* StoryCell.swift in Sources */,
 				E26EA2BF296DC92600EB47A8 /* DiscoverVideoCell.swift in Sources */,
+				E2519353297686D0005E286F /* ReelCellViewModel.swift in Sources */,
 				E26C3BB4296840DD00ADEC57 /* Layer.swift in Sources */,
+				E266718E297985CA00982D68 /* Reel.swift in Sources */,
 				E29B5864296EB5E900D3605F /* SearchResultCell.swift in Sources */,
+				E255C1FE2972E00100263E1C /* ReelCell.swift in Sources */,
 				E26EA2C3296DCC2500EB47A8 /* DiscoverImageCellViewModel.swift in Sources */,
 				E26EA2C5296DCDF000EB47A8 /* Discover.swift in Sources */,
 				E26C3BAF2968401200ADEC57 /* Color.swift in Sources */,

@@ -96,3 +96,30 @@ var usersData: [User] = [
         profileImagePath: "https://user-images.githubusercontent.com/36153454/211784386-be3e67a8-ad5b-4458-897a-c620446aaa6e.jpeg"
     ),
 ]
+
+var reelsData: [Reel] = [
+    Reel(
+        username: "oguzhankaymakk",
+        profileImageUrl: "https://www.oguzhankaymak.net/oguzhankaymak.jpg",
+        videoPath: "https://user-images.githubusercontent.com/36153454/213465335-8b5be25d-bc01-4ab8-8832-4fd10731d0ec.MOV",
+        description: "My awesome video",
+        likeCount: "12K",
+        commentCount: "1k"
+    ),
+    Reel(
+        username: "framesbyc",
+        profileImageUrl: "https://user-images.githubusercontent.com/36153454/211784386-be3e67a8-ad5b-4458-897a-c620446aaa6e.jpeg",
+        videoPath: "https://user-images.githubusercontent.com/36153454/211622448-40035878-4105-4f7e-b299-3a6cf8997212.mov",
+        description: "Fireee 🔥",
+        likeCount: "10K",
+        commentCount: "63"
+    ),
+    Reel(
+        username: "oguzhankaymakk",
+        profileImageUrl: "https://www.oguzhankaymak.net/oguzhankaymak.jpg",
+        videoPath: "https://user-images.githubusercontent.com/36153454/212050262-374e8471-1718-45fa-8601-5a1b70313392.mov",
+        description: "I walk everyday",
+        likeCount: "1239",
+        commentCount: "21"
+    ),
+]

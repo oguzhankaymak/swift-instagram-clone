@@ -12,13 +12,15 @@ import AVFoundation
 class DiscoverVideoCell: UICollectionViewCell {
     static let identifier = "discover-video-cell-identifier"
 
-    private var player: AVPlayer!
+    private var queuePlayer: AVQueuePlayer?
+    private var avPlayerLayer: AVPlayerLayer?
+    private var avPlayerLooper: AVPlayerLooper?
+    private var playerItemStatusObserver: NSKeyValueObservation?
 
-    private lazy var avpController: AVPlayerViewController = {
-        let controller = AVPlayerViewController()
-        controller.view.translatesAutoresizingMaskIntoConstraints = false
-        controller.showsPlaybackControls = false
-        return controller
+    private lazy var activityIndicatorView: UIActivityIndicatorView = {
+        let view = UIActivityIndicatorView()
+        view.center = contentView.center
+        return view
     }()
 
     override init(frame: CGRect) {
@@ -29,36 +31,49 @@ class DiscoverVideoCell: UICollectionViewCell {
         fatalError("Discover video cell didn't not implemented")
     }
 
-    private func createVideoPlayer(videoUrl: URL) {
-        player = AVPlayer(url: videoUrl)
-        avpController.player = player
-        player.play()
-        contentView.addSubview(avpController.view)
-        configureConstraints()
+    // MARK: - Public funcs
+    public func removeVideoPlayer() {
+        avPlayerLayer?.removeFromSuperlayer()
+        avPlayerLayer = nil
+        queuePlayer = nil
+        avPlayerLooper = nil
+        playerItemStatusObserver = nil
+        contentView.subviews.forEach({ $0.removeFromSuperview() })
     }
-}
 
-// MARK: - configureModel
-extension DiscoverVideoCell {
-    func configure(with discoverVideoCellModel: DiscoverVideoCellViewModel) {
-        guard let videoUrl = URL(string: discoverVideoCellModel.videoPath) else {
-            return
-        }
+    public func createVideoPlayer(with videoURL: URL) {
+        contentView.addSubview(activityIndicatorView)
+        activityIndicatorView.startAnimating()
+        let asset: AVAsset = AVAsset(url: videoURL)
+        let playerItem = AVPlayerItem(asset: asset)
+        queuePlayer = AVQueuePlayer(playerItem: playerItem)
 
-        createVideoPlayer(videoUrl: videoUrl)
+        guard let player = queuePlayer else { return }
+
+        avPlayerLooper = AVPlayerLooper(
+            player: player,
+            templateItem: playerItem
+        )
+
+        avPlayerLayer = AVPlayerLayer(player: queuePlayer)
+        avPlayerLayer?.frame = contentView.bounds
+        avPlayerLayer?.videoGravity = .resizeAspectFill
+
+        playerItemStatusObserver = playerItem.observe(
+            \.status,
+             options: [.old, .new],
+             changeHandler: { [weak self] playerItem, _ in
+            if playerItem.status == .readyToPlay {
+                self?.activityIndicatorView.stopAnimating()
+            }
+        })
+
+        guard let layer = avPlayerLayer else { return }
+        contentView.layer.addSublayer(layer)
+        playVideo()
     }
-}
 
-// MARK: - configureConstraints
-extension DiscoverVideoCell {
-    private func configureConstraints() {
-        let videoPlayerViewViewConstraints: [NSLayoutConstraint] = [
-            avpController.view.topAnchor.constraint(equalTo: contentView.topAnchor),
-            avpController.view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            avpController.view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            avpController.view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
-        ]
-
-        NSLayoutConstraint.activate(videoPlayerViewViewConstraints)
+    private func playVideo() {
+        queuePlayer?.play()
     }
 }

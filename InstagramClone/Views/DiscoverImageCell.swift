@@ -7,14 +7,9 @@
 
 import UIKit
 import SDWebImage
-import AVKit
-import AVFoundation
 
 class DiscoverImageCell: UICollectionViewCell {
     static let identifier = "discover-image-cell-identifier"
-
-    private var player: AVPlayer!
-    private lazy var avpController = AVPlayerViewController()
 
     private lazy var containerView: UIView = {
         let view = UIView()

@@ -240,13 +240,13 @@ extension ReelCell {
         let cameraButtonConstraints: [NSLayoutConstraint] = [
             cameraButton.topAnchor.constraint(
                 equalTo: operationsView.topAnchor,
-                constant: contentView.frame.size.height / 12
+                constant: contentView.frame.size.height / 16
             ),
             cameraButton.trailingAnchor.constraint(equalTo: operationsView.trailingAnchor, constant: -20)
         ]
 
         let likeButtonConstraints: [NSLayoutConstraint] = [
-            likeButton.centerYAnchor.constraint(equalTo: operationsView.centerYAnchor, constant: 50),
+            likeButton.centerYAnchor.constraint(equalTo: operationsView.centerYAnchor),
             likeButton.trailingAnchor.constraint(equalTo: operationsView.trailingAnchor, constant: -20)
         ]
 
@@ -256,7 +256,10 @@ extension ReelCell {
         ]
 
         let commentButtonConstraints: [NSLayoutConstraint] = [
-            commentButton.topAnchor.constraint(equalTo: likeCountLabel.bottomAnchor, constant: 30),
+            commentButton.topAnchor.constraint(
+                equalTo: likeCountLabel.bottomAnchor,
+                constant: contentView.frame.size.height / 20
+            ),
             commentButton.trailingAnchor.constraint(
                 equalTo: operationsView.trailingAnchor,
                 constant: -20
@@ -269,7 +272,10 @@ extension ReelCell {
         ]
 
         let shareButtonConstraints: [NSLayoutConstraint] = [
-            shareButton.topAnchor.constraint(equalTo: commentCountLabel.bottomAnchor, constant: 30),
+            shareButton.topAnchor.constraint(
+                equalTo: commentCountLabel.bottomAnchor,
+                constant: contentView.frame.size.height / 20
+            ),
             shareButton.trailingAnchor.constraint(
                 equalTo: operationsView.trailingAnchor,
                 constant: -20
@@ -277,7 +283,10 @@ extension ReelCell {
         ]
 
         let detailsButtonConstraints: [NSLayoutConstraint] = [
-            detailsButton.topAnchor.constraint(equalTo: shareButton.bottomAnchor, constant: 30),
+            detailsButton.topAnchor.constraint(
+                equalTo: shareButton.bottomAnchor,
+                constant: contentView.frame.size.height / 20
+            ),
             detailsButton.trailingAnchor.constraint(
                 equalTo: operationsView.trailingAnchor,
                 constant: -20

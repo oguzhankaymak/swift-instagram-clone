@@ -27,6 +27,7 @@
 		E2567CF0296746F900E856D7 /* CompositionalLayoutSectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CEF296746F900E856D7 /* CompositionalLayoutSectionHelper.swift */; };
 		E2567CF4296747F500E856D7 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CF2296747F500E856D7 /* PostCell.swift */; };
 		E2567CF5296747F500E856D7 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CF3296747F500E856D7 /* StoryCell.swift */; };
+		E25DFBA729854C8C00702320 /* ProfilePostCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25DFBA629854C8C00702320 /* ProfilePostCellViewModel.swift */; };
 		E266718E297985CA00982D68 /* Reel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E266718D297985CA00982D68 /* Reel.swift */; };
 		E26C3BAF2968401200ADEC57 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C3BAE2968401200ADEC57 /* Color.swift */; };
 		E26C3BB12968402400ADEC57 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C3BB02968402400ADEC57 /* Font.swift */; };
@@ -36,6 +37,8 @@
 		E26EA2C3296DCC2500EB47A8 /* DiscoverImageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26EA2C2296DCC2500EB47A8 /* DiscoverImageCellViewModel.swift */; };
 		E26EA2C5296DCDF000EB47A8 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26EA2C4296DCDF000EB47A8 /* Discover.swift */; };
 		E26EA2C7296DCE2800EB47A8 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26EA2C6296DCE2800EB47A8 /* ContentType.swift */; };
+		E270DD3A297D1B8800952172 /* ProfilePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E270DD39297D1B8800952172 /* ProfilePostCell.swift */; };
+		E270DD3E297D387A00952172 /* ProfileViewHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E270DD3D297D387A00952172 /* ProfileViewHeaderCollectionReusableView.swift */; };
 		E29B5862296EB4E700D3605F /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B5861296EB4E700D3605F /* SearchResultViewController.swift */; };
 		E29B5864296EB5E900D3605F /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B5863296EB5E900D3605F /* SearchResultCell.swift */; };
 		E29B5866296EC68700D3605F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B5865296EC68700D3605F /* User.swift */; };
@@ -69,6 +72,7 @@
 		E2567CEF296746F900E856D7 /* CompositionalLayoutSectionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutSectionHelper.swift; sourceTree = "<group>"; };
 		E2567CF2296747F500E856D7 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		E2567CF3296747F500E856D7 /* StoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		E25DFBA629854C8C00702320 /* ProfilePostCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostCellViewModel.swift; sourceTree = "<group>"; };
 		E266718D297985CA00982D68 /* Reel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reel.swift; sourceTree = "<group>"; };
 		E26C3BAE2968401200ADEC57 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		E26C3BB02968402400ADEC57 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 		E26EA2C2296DCC2500EB47A8 /* DiscoverImageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverImageCellViewModel.swift; sourceTree = "<group>"; };
 		E26EA2C4296DCDF000EB47A8 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
 		E26EA2C6296DCE2800EB47A8 /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
+		E270DD39297D1B8800952172 /* ProfilePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostCell.swift; sourceTree = "<group>"; };
+		E270DD3D297D387A00952172 /* ProfileViewHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		E29B5861296EB4E700D3605F /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		E29B5863296EB5E900D3605F /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		E29B5865296EC68700D3605F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -212,6 +218,8 @@
 				E2567CF3296747F500E856D7 /* StoryCell.swift */,
 				E29B5863296EB5E900D3605F /* SearchResultCell.swift */,
 				E255C1FD2972E00100263E1C /* ReelCell.swift */,
+				E270DD39297D1B8800952172 /* ProfilePostCell.swift */,
+				E270DD3D297D387A00952172 /* ProfileViewHeaderCollectionReusableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -243,6 +251,7 @@
 				E26EA2C2296DCC2500EB47A8 /* DiscoverImageCellViewModel.swift */,
 				E29B5867296EC6EA00D3605F /* SearchResultCellViewModel.swift */,
 				E2519352297686D0005E286F /* ReelCellViewModel.swift */,
+				E25DFBA629854C8C00702320 /* ProfilePostCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -383,6 +392,7 @@
 				E26EA2C1296DCC1800EB47A8 /* DiscoverVideoCellViewModel.swift in Sources */,
 				E2567CDB29673D8300E856D7 /* SearchViewController.swift in Sources */,
 				E2567CD929673D4B00E856D7 /* HomeViewController.swift in Sources */,
+				E270DD3E297D387A00952172 /* ProfileViewHeaderCollectionReusableView.swift in Sources */,
 				E2567CF4296747F500E856D7 /* PostCell.swift in Sources */,
 				E2567CF5296747F500E856D7 /* StoryCell.swift in Sources */,
 				E26EA2BF296DC92600EB47A8 /* DiscoverVideoCell.swift in Sources */,
@@ -398,10 +408,12 @@
 				E2567CD729673CBC00E856D7 /* MainTabbarViewController.swift in Sources */,
 				E2567CC0296731D100E856D7 /* AppDelegate.swift in Sources */,
 				E2DA5709296755C7007E2E25 /* StoryCellViewModel.swift in Sources */,
+				E25DFBA729854C8C00702320 /* ProfilePostCellViewModel.swift in Sources */,
 				E2567CEA2967429100E856D7 /* Data.swift in Sources */,
 				E26EA2C7296DCE2800EB47A8 /* ContentType.swift in Sources */,
 				E2567CF0296746F900E856D7 /* CompositionalLayoutSectionHelper.swift in Sources */,
 				E2567CDD29673DFF00E856D7 /* ReelsViewController.swift in Sources */,
+				E270DD3A297D1B8800952172 /* ProfilePostCell.swift in Sources */,
 				E2567CDF29673E2500E856D7 /* ShopViewController.swift in Sources */,
 				E29B5866296EC68700D3605F /* User.swift in Sources */,
 				E2567CE129673E5600E856D7 /* ProfileViewController.swift in Sources */,

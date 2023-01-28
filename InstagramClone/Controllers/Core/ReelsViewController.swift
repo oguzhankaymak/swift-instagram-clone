@@ -31,11 +31,27 @@ class ReelsViewController: UIViewController {
 
     private func addUIElements() {
         view.addSubview(collectionView)
+
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        if(self.traitCollection.userInterfaceStyle == .light) {
+            tabBarController?.tabBar.barTintColor = .black
+            tabBarController?.tabBar.tintColor = Color.white
+        }
     }
 
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         collectionView.reloadData()
+
+        if(self.traitCollection.userInterfaceStyle == .light) {
+            tabBarController?.tabBar.barTintColor = Color.backgroundColor
+            tabBarController?.tabBar.tintColor = Color.label
+        }
+
     }
 }
 

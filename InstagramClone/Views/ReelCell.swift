@@ -39,7 +39,7 @@ class ReelCell: UICollectionViewCell {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(iconImage, for: .normal)
-        button.tintColor = Color.label
+        button.tintColor = Color.white
         return button
     }()
 
@@ -52,7 +52,7 @@ class ReelCell: UICollectionViewCell {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(iconImage, for: .normal)
-        button.tintColor = Color.label
+        button.tintColor = Color.white
         return button
     }()
 
@@ -60,7 +60,7 @@ class ReelCell: UICollectionViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = AppFont.postText
-        label.textColor = Color.label
+        label.textColor = Color.white
         return label
     }()
 
@@ -73,7 +73,7 @@ class ReelCell: UICollectionViewCell {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(iconImage, for: .normal)
-        button.tintColor = Color.label
+        button.tintColor = Color.white
         return button
     }()
 
@@ -81,7 +81,7 @@ class ReelCell: UICollectionViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = AppFont.postText
-        label.textColor = Color.label
+        label.textColor = Color.white
         return label
     }()
 
@@ -94,7 +94,7 @@ class ReelCell: UICollectionViewCell {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(iconImage, for: .normal)
-        button.tintColor = Color.label
+        button.tintColor = Color.white
         return button
     }()
 
@@ -107,7 +107,7 @@ class ReelCell: UICollectionViewCell {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(iconImage, for: .normal)
-        button.tintColor = Color.label
+        button.tintColor = Color.white
         return button
     }()
 
@@ -130,14 +130,14 @@ class ReelCell: UICollectionViewCell {
         var label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = AppFont.postTitle
-        label.textColor = Color.label
+        label.textColor = Color.white
         return label
     }()
 
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = Color.label
+        label.textColor = Color.white
         label.font = AppFont.postSmallText
         return label
     }()

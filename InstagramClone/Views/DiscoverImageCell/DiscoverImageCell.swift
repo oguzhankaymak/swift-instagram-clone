@@ -11,13 +11,6 @@ import SDWebImage
 class DiscoverImageCell: UICollectionViewCell {
     static let identifier = "discover-image-cell-identifier"
 
-    private lazy var containerView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = Color.backgroundColor
-        return view
-    }()
-
     private lazy var discoverImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false

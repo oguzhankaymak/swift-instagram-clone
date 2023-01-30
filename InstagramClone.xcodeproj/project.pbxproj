@@ -11,6 +11,8 @@
 		E204C9D8296C9995003F2CE9 /* DiscoverImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204C9D7296C9995003F2CE9 /* DiscoverImageCell.swift */; };
 		E24468F52987D2E000A8340F /* PostCellFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24468F42987D2E000A8340F /* PostCellFooterView.swift */; };
 		E24468FE2987DB2A00A8340F /* StoryCellCircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24468FD2987DB2A00A8340F /* StoryCellCircleImageView.swift */; };
+		E24469012987E10200A8340F /* ReelCellRightButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24469002987E10200A8340F /* ReelCellRightButtonsView.swift */; };
+		E24469032987EDCA00A8340F /* ReelCellFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24469022987EDCA00A8340F /* ReelCellFooterView.swift */; };
 		E2519353297686D0005E286F /* ReelCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2519352297686D0005E286F /* ReelCellViewModel.swift */; };
 		E255C1FE2972E00100263E1C /* ReelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255C1FD2972E00100263E1C /* ReelCell.swift */; };
 		E2567CC0296731D100E856D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2567CBF296731D100E856D7 /* AppDelegate.swift */; };
@@ -59,6 +61,8 @@
 		E204C9D7296C9995003F2CE9 /* DiscoverImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverImageCell.swift; sourceTree = "<group>"; };
 		E24468F42987D2E000A8340F /* PostCellFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellFooterView.swift; sourceTree = "<group>"; };
 		E24468FD2987DB2A00A8340F /* StoryCellCircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCellCircleImageView.swift; sourceTree = "<group>"; };
+		E24469002987E10200A8340F /* ReelCellRightButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelCellRightButtonsView.swift; sourceTree = "<group>"; };
+		E24469022987EDCA00A8340F /* ReelCellFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelCellFooterView.swift; sourceTree = "<group>"; };
 		E2519352297686D0005E286F /* ReelCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelCellViewModel.swift; sourceTree = "<group>"; };
 		E255C1FD2972E00100263E1C /* ReelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelCell.swift; sourceTree = "<group>"; };
 		E2567CBC296731D100E856D7 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,8 +154,8 @@
 		E24468F82987D82400A8340F /* StoryCell */ = {
 			isa = PBXGroup;
 			children = (
-				E24468FC2987DB1300A8340F /* Components */,
 				E2567CF3296747F500E856D7 /* StoryCell.swift */,
+				E24468FC2987DB1300A8340F /* Components */,
 			);
 			path = StoryCell;
 			sourceTree = "<group>";
@@ -167,6 +171,7 @@
 		E24468FA2987D83B00A8340F /* ReelCell */ = {
 			isa = PBXGroup;
 			children = (
+				E24468FF2987DC5C00A8340F /* Components */,
 				E255C1FD2972E00100263E1C /* ReelCell.swift */,
 			);
 			path = ReelCell;
@@ -184,6 +189,15 @@
 			isa = PBXGroup;
 			children = (
 				E24468FD2987DB2A00A8340F /* StoryCellCircleImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E24468FF2987DC5C00A8340F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E24469002987E10200A8340F /* ReelCellRightButtonsView.swift */,
+				E24469022987EDCA00A8340F /* ReelCellFooterView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -479,6 +493,7 @@
 				E26EA2C1296DCC1800EB47A8 /* DiscoverVideoCellViewModel.swift in Sources */,
 				E25861D02986C333003D8F6D /* PostCellImageView.swift in Sources */,
 				E24468FE2987DB2A00A8340F /* StoryCellCircleImageView.swift in Sources */,
+				E24469012987E10200A8340F /* ReelCellRightButtonsView.swift in Sources */,
 				E2567CDB29673D8300E856D7 /* SearchViewController.swift in Sources */,
 				E2567CD929673D4B00E856D7 /* HomeViewController.swift in Sources */,
 				E270DD3E297D387A00952172 /* ProfileViewHeaderCollectionReusableView.swift in Sources */,
@@ -506,6 +521,7 @@
 				E2567CDD29673DFF00E856D7 /* ReelsViewController.swift in Sources */,
 				E270DD3A297D1B8800952172 /* ProfilePostCell.swift in Sources */,
 				E2567CDF29673E2500E856D7 /* ShopViewController.swift in Sources */,
+				E24469032987EDCA00A8340F /* ReelCellFooterView.swift in Sources */,
 				E29B5866296EC68700D3605F /* User.swift in Sources */,
 				E2567CE129673E5600E856D7 /* ProfileViewController.swift in Sources */,
 				E25861CE2986BCB2003D8F6D /* PostCellHeaderView.swift in Sources */,

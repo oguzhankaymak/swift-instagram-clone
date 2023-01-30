@@ -15,7 +15,7 @@ class ReelsViewController: UIViewController {
 
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.backgroundColor = Color.backgroundColor
+        collectionView.backgroundColor = Color.black
         collectionView.isPagingEnabled = true
         collectionView.contentInsetAdjustmentBehavior = .never
         return collectionView

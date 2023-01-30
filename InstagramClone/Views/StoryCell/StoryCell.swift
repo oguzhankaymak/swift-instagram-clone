@@ -11,16 +11,7 @@ import SDWebImage
 class StoryCell: UICollectionViewCell {
     static let identifier = "story-cell-identifier"
 
-    private lazy var circleImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.layer.borderWidth = 2
-        imageView.layer.cornerRadius = 56/2
-        imageView.clipsToBounds = true
-        imageView.layer.masksToBounds = true
-        imageView.layer.borderColor = BorderColor.story
-        return imageView
-    }()
+    private lazy var circleImageView = StoryCellCircleImageView(frame: .zero)
 
     override init(frame: CGRect) {
         super.init(frame: frame)

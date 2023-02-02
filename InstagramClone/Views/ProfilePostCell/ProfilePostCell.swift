@@ -11,13 +11,6 @@ import SDWebImage
 class ProfilePostCell: UICollectionViewCell {
     static let identifier = "profile-post-cell-identifier"
 
-    private lazy var containerView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = Color.backgroundColor
-        return view
-    }()
-
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -31,7 +24,7 @@ class ProfilePostCell: UICollectionViewCell {
     }
 
     required init?(coder: NSCoder) {
-        fatalError("Discover image cell didn't implement")
+        fatalError("ProfilePostCell didn't implement")
     }
 
     private func addUIElements() {

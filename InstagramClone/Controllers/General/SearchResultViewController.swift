@@ -30,7 +30,6 @@ class SearchResultViewController: UIViewController {
     private func addUIElements() {
         view.addSubview(collectionView)
     }
-
 }
 
 // MARK: - configureCollectionView

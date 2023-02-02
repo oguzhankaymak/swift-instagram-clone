@@ -44,6 +44,7 @@
 		E26EA2C3296DCC2500EB47A8 /* DiscoverImageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26EA2C2296DCC2500EB47A8 /* DiscoverImageCellViewModel.swift */; };
 		E26EA2C5296DCDF000EB47A8 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26EA2C4296DCDF000EB47A8 /* Discover.swift */; };
 		E26EA2C7296DCE2800EB47A8 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26EA2C6296DCE2800EB47A8 /* ContentType.swift */; };
+		E27041DE2988007D0045CD02 /* SearchResultCellBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27041DD2988007D0045CD02 /* SearchResultCellBodyView.swift */; };
 		E270DD3A297D1B8800952172 /* ProfilePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E270DD39297D1B8800952172 /* ProfilePostCell.swift */; };
 		E270DD3E297D387A00952172 /* ProfileViewHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E270DD3D297D387A00952172 /* ProfileViewHeaderCollectionReusableView.swift */; };
 		E29B5862296EB4E700D3605F /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B5861296EB4E700D3605F /* SearchResultViewController.swift */; };
@@ -96,6 +97,7 @@
 		E26EA2C2296DCC2500EB47A8 /* DiscoverImageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverImageCellViewModel.swift; sourceTree = "<group>"; };
 		E26EA2C4296DCDF000EB47A8 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
 		E26EA2C6296DCE2800EB47A8 /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
+		E27041DD2988007D0045CD02 /* SearchResultCellBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCellBodyView.swift; sourceTree = "<group>"; };
 		E270DD39297D1B8800952172 /* ProfilePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostCell.swift; sourceTree = "<group>"; };
 		E270DD3D297D387A00952172 /* ProfileViewHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		E29B5861296EB4E700D3605F /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		E24468F92987D82D00A8340F /* SearchResultCell */ = {
 			isa = PBXGroup;
 			children = (
+				E27041DC2988001B0045CD02 /* Components */,
 				E29B5863296EB5E900D3605F /* SearchResultCell.swift */,
 			);
 			path = SearchResultCell;
@@ -333,6 +336,14 @@
 				E26C3BB3296840DD00ADEC57 /* Layer.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		E27041DC2988001B0045CD02 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E27041DD2988007D0045CD02 /* SearchResultCellBodyView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		E29B5860296EB4AE00D3605F /* General */ = {
@@ -532,6 +543,7 @@
 				E29B5868296EC6EA00D3605F /* SearchResultCellViewModel.swift in Sources */,
 				E29B5862296EB4E700D3605F /* SearchResultViewController.swift in Sources */,
 				E2567CE72967416F00E856D7 /* Post.swift in Sources */,
+				E27041DE2988007D0045CD02 /* SearchResultCellBodyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,17 @@ class ShopViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemRed
+        view.backgroundColor = Color.backgroundColor
+
+        navigationController?.navigationBar.tintColor = .label
+        navigationController?.navigationBar.backgroundColor = .systemBackground
+
+        let label = UILabel()
+        label.textColor = Color.label
+        label.text = "Shop"
+        label.font = AppFont.navigationTitle
+
+        navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
     }
 
 }

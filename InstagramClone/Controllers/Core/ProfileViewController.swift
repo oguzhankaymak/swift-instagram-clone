@@ -37,7 +37,7 @@ class ProfileViewController: UIViewController {
 extension ProfileViewController {
     private func configureNavigationBar() {
         navigationController?.navigationBar.tintColor = .label
-        navigationController?.navigationBar.backgroundColor = .systemBackground
+        navigationController?.navigationBar.backgroundColor = Color.backgroundColor
 
         let label = UILabel()
         label.textColor = Color.label
@@ -81,19 +81,20 @@ extension ProfileViewController {
 // MARK: - configureCollectionView
 extension ProfileViewController {
     private func configureCollectionView() {
+        collectionView.delegate = self
         collectionView.dataSource = self
 
         collectionView.register(
-            ProfileViewHeaderCollectionReusableView.self,
+            ProfileCollectionReusableHeaderView.self,
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-            withReuseIdentifier: ProfileViewHeaderCollectionReusableView.identifier
+            withReuseIdentifier: ProfileCollectionReusableHeaderView.identifier
         )
         collectionView.register(ProfilePostCell.self, forCellWithReuseIdentifier: ProfilePostCell.identifier )
     }
 }
 
 // MARK: - UICollectionViewDataSource
-extension ProfileViewController: UICollectionViewDataSource {
+extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return postsData.count
@@ -122,13 +123,28 @@ extension ProfileViewController: UICollectionViewDataSource {
     ) -> UICollectionReusableView {
         guard let headerView = collectionView.dequeueReusableSupplementaryView(
             ofKind: UICollectionView.elementKindSectionHeader,
-            withReuseIdentifier: ProfileViewHeaderCollectionReusableView.identifier,
+            withReuseIdentifier: ProfileCollectionReusableHeaderView.identifier,
             for: indexPath
-        ) as? ProfileViewHeaderCollectionReusableView else { return UICollectionViewCell() }
+        ) as? ProfileCollectionReusableHeaderView else { return UICollectionViewCell() }
 
         headerView.configure(with: "https://www.oguzhankaymak.net/oguzhankaymak.jpg")
+        headerView.delegate = self
 
         return headerView
+    }
+}
+
+extension ProfileViewController: ProfileCollectionReusableHeaderViewDelegate {
+    func shareProfileButtonTap() {
+        print("shareProfileButtonTap")
+    }
+
+    func suggestFriendButtonDidTap() {
+        print("suggestFriendButtonDidTap")
+    }
+
+    func editProfileButtonDidTap() {
+        print("editProfileButtonDidTap")
     }
 }
 

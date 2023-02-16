@@ -20,7 +20,5 @@ pod install
 
 ## Screen Recording
 
-https://user-images.githubusercontent.com/36153454/211073157-03a46b9c-bcba-4b04-95a0-47bd6fd2a5a0.mov
-
-
+https://user-images.githubusercontent.com/36153454/219467382-389245d4-2b0e-48d9-aee0-e30db3141c5e.mov
 

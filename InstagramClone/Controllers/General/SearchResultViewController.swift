@@ -13,7 +13,7 @@ class SearchResultViewController: UIViewController {
 
     public lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = .init(width: view.frame.width, height: view.frame.height / 18)
+        layout.itemSize = .init(width: view.frame.width, height: view.frame.height / 15)
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = Color.backgroundColor

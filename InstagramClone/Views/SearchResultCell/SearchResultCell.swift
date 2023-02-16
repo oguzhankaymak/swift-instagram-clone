@@ -10,7 +10,7 @@ import UIKit
 class SearchResultCell: UICollectionViewCell {
     static let identifier = "search-result-cell-identifier"
 
-    private lazy var profileImageViewSize = contentView.frame.height
+    private lazy var profileImageViewSize = contentView.frame.height * 0.75
 
     private lazy var profileImageView: UIImageView = {
         let imageView = UIImageView()

@@ -8,6 +8,7 @@
 import UIKit
 
 class ShopViewController: UIViewController {
+    var coordinator: ShopCoordinatorProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,6 +8,8 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    var coordinator: HomeCoordinatorProtocol?
+
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewCompositionalLayout { (sectionIndex, _) -> NSCollectionLayoutSection? in
             switch sectionIndex {

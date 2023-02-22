@@ -8,6 +8,7 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    var coordinator: ProfileCoordinatorProtocol?
 
     private lazy var collectionView: UICollectionView = {
         let section = CompositionalLayoutSectionHelper.createProfilePostSection()

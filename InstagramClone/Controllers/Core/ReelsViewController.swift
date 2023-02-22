@@ -8,6 +8,7 @@
 import UIKit
 
 class ReelsViewController: UIViewController {
+    var coordinator: ReelsCoordinatorProtocol?
 
     private lazy var collectionView: UICollectionView = {
         let section = CompositionalLayoutSectionHelper.createReelsSection()
@@ -31,7 +32,6 @@ class ReelsViewController: UIViewController {
 
     private func addUIElements() {
         view.addSubview(collectionView)
-
     }
 
     override func viewWillAppear(_ animated: Bool) {

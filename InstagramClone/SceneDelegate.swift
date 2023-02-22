@@ -1,15 +1,9 @@
-//
-//  SceneDelegate.swift
-//  InstagramClone
-//
-//  Created by Oğuzhan Kaymak on 5.01.2023.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var coordinator: AppCoordinator?
 
     func scene(
         _ scene: UIScene,
@@ -20,8 +14,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = MainTabbarViewController()
-        window?.makeKeyAndVisible()
-    }
 
+        coordinator = AppCoordinator(window: window!)
+        coordinator?.start()
+    }
 }

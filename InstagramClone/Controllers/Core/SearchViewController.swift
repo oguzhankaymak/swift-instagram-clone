@@ -8,6 +8,7 @@
 import UIKit
 
 class SearchViewController: UIViewController {
+    var coordinator: SearchCoordinatorProtocol?
 
     private lazy var collectionView: UICollectionView = {
         let section = CompositionalLayoutSectionHelper.createSearchSection()

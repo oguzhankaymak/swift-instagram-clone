@@ -52,6 +52,14 @@
 		E29B5864296EB5E900D3605F /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B5863296EB5E900D3605F /* SearchResultCell.swift */; };
 		E29B5866296EC68700D3605F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B5865296EC68700D3605F /* User.swift */; };
 		E29B5868296EC6EA00D3605F /* SearchResultCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B5867296EC6EA00D3605F /* SearchResultCellViewModel.swift */; };
+		E2AFEFF029A298EA00F803D1 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFEFEF29A298EA00F803D1 /* TabBarCoordinator.swift */; };
+		E2AFEFF229A2992C00F803D1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFEFF129A2992C00F803D1 /* AppCoordinator.swift */; };
+		E2AFEFF429A2997300F803D1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFEFF329A2997300F803D1 /* Coordinator.swift */; };
+		E2AFEFF629A29CF300F803D1 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFEFF529A29CF300F803D1 /* HomeCoordinator.swift */; };
+		E2AFEFF829A29EDB00F803D1 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFEFF729A29EDB00F803D1 /* SearchCoordinator.swift */; };
+		E2AFEFFB29A29F3E00F803D1 /* ReelsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFEFFA29A29F3E00F803D1 /* ReelsCoordinator.swift */; };
+		E2AFEFFD29A29F9400F803D1 /* ShopCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFEFFC29A29F9400F803D1 /* ShopCoordinator.swift */; };
+		E2AFEFFF29A29FD900F803D1 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFEFFE29A29FD900F803D1 /* ProfileCoordinator.swift */; };
 		E2D82C5F298C59AF0065F036 /* ProfileInfoStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D82C5E298C59AF0065F036 /* ProfileInfoStackView.swift */; };
 		E2D82C61298C5A950065F036 /* TitleAndCountLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D82C60298C5A950065F036 /* TitleAndCountLabelView.swift */; };
 		E2DA5709296755C7007E2E25 /* StoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA5708296755C6007E2E25 /* StoryCellViewModel.swift */; };
@@ -108,6 +116,14 @@
 		E29B5863296EB5E900D3605F /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		E29B5865296EC68700D3605F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E29B5867296EC6EA00D3605F /* SearchResultCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCellViewModel.swift; sourceTree = "<group>"; };
+		E2AFEFEF29A298EA00F803D1 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		E2AFEFF129A2992C00F803D1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E2AFEFF329A2997300F803D1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E2AFEFF529A29CF300F803D1 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		E2AFEFF729A29EDB00F803D1 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		E2AFEFFA29A29F3E00F803D1 /* ReelsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCoordinator.swift; sourceTree = "<group>"; };
+		E2AFEFFC29A29F9400F803D1 /* ShopCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCoordinator.swift; sourceTree = "<group>"; };
+		E2AFEFFE29A29FD900F803D1 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		E2D82C5E298C59AF0065F036 /* ProfileInfoStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoStackView.swift; sourceTree = "<group>"; };
 		E2D82C60298C5A950065F036 /* TitleAndCountLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndCountLabelView.swift; sourceTree = "<group>"; };
 		E2DA5708296755C6007E2E25 /* StoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCellViewModel.swift; sourceTree = "<group>"; };
@@ -241,6 +257,7 @@
 		E2567CBE296731D100E856D7 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				E2AFEFEE29A298A000F803D1 /* Coordinator */,
 				E26C3BAD29683FFC00ADEC57 /* Theme */,
 				E2DA5707296755B6007E2E25 /* ViewModels */,
 				E2567CF1296747EC00E856D7 /* Views */,
@@ -367,6 +384,21 @@
 				E29B5861296EB4E700D3605F /* SearchResultViewController.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		E2AFEFEE29A298A000F803D1 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E2AFEFEF29A298EA00F803D1 /* TabBarCoordinator.swift */,
+				E2AFEFF129A2992C00F803D1 /* AppCoordinator.swift */,
+				E2AFEFF329A2997300F803D1 /* Coordinator.swift */,
+				E2AFEFF529A29CF300F803D1 /* HomeCoordinator.swift */,
+				E2AFEFF729A29EDB00F803D1 /* SearchCoordinator.swift */,
+				E2AFEFFA29A29F3E00F803D1 /* ReelsCoordinator.swift */,
+				E2AFEFFC29A29F9400F803D1 /* ShopCoordinator.swift */,
+				E2AFEFFE29A29FD900F803D1 /* ProfileCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		E2D82C5C298C55B80065F036 /* ProfileCollectionHeaderView */ = {
@@ -541,16 +573,21 @@
 				E2567CDB29673D8300E856D7 /* SearchViewController.swift in Sources */,
 				E2567CD929673D4B00E856D7 /* HomeViewController.swift in Sources */,
 				E270DD3E297D387A00952172 /* ProfileCollectionReusableHeaderView.swift in Sources */,
+				E2AFEFF629A29CF300F803D1 /* HomeCoordinator.swift in Sources */,
+				E2AFEFFB29A29F3E00F803D1 /* ReelsCoordinator.swift in Sources */,
 				E2567CF4296747F500E856D7 /* PostCell.swift in Sources */,
 				E2567CF5296747F500E856D7 /* StoryCell.swift in Sources */,
 				E26EA2BF296DC92600EB47A8 /* DiscoverVideoCell.swift in Sources */,
 				E2519353297686D0005E286F /* ReelCellViewModel.swift in Sources */,
 				E26C3BB4296840DD00ADEC57 /* Layer.swift in Sources */,
 				E266718E297985CA00982D68 /* Reel.swift in Sources */,
+				E2AFEFFD29A29F9400F803D1 /* ShopCoordinator.swift in Sources */,
+				E2AFEFFF29A29FD900F803D1 /* ProfileCoordinator.swift in Sources */,
 				E29B5864296EB5E900D3605F /* SearchResultCell.swift in Sources */,
 				E255C1FE2972E00100263E1C /* ReelCell.swift in Sources */,
 				E26EA2C3296DCC2500EB47A8 /* DiscoverImageCellViewModel.swift in Sources */,
 				E26EA2C5296DCDF000EB47A8 /* Discover.swift in Sources */,
+				E2AFEFF029A298EA00F803D1 /* TabBarCoordinator.swift in Sources */,
 				E26C3BAF2968401200ADEC57 /* Color.swift in Sources */,
 				E2E9F89329676208004111C1 /* PostCellViewModel.swift in Sources */,
 				E2567CD729673CBC00E856D7 /* MainTabbarViewController.swift in Sources */,
@@ -567,8 +604,10 @@
 				E270DD3A297D1B8800952172 /* ProfilePostCell.swift in Sources */,
 				E21C22B4298E9472006E313F /* ProfileCollectionHeaderFooterStackView.swift in Sources */,
 				E2567CDF29673E2500E856D7 /* ShopViewController.swift in Sources */,
+				E2AFEFF429A2997300F803D1 /* Coordinator.swift in Sources */,
 				E24469032987EDCA00A8340F /* ReelCellFooterView.swift in Sources */,
 				E29B5866296EC68700D3605F /* User.swift in Sources */,
+				E2AFEFF229A2992C00F803D1 /* AppCoordinator.swift in Sources */,
 				E2567CE129673E5600E856D7 /* ProfileViewController.swift in Sources */,
 				E25861CE2986BCB2003D8F6D /* PostCellHeaderView.swift in Sources */,
 				E26C3BB12968402400ADEC57 /* Font.swift in Sources */,
@@ -579,6 +618,7 @@
 				E29B5868296EC6EA00D3605F /* SearchResultCellViewModel.swift in Sources */,
 				E29B5862296EB4E700D3605F /* SearchResultViewController.swift in Sources */,
 				E2567CE72967416F00E856D7 /* Post.swift in Sources */,
+				E2AFEFF829A29EDB00F803D1 /* SearchCoordinator.swift in Sources */,
 				E27041DE2988007D0045CD02 /* SearchResultCellBodyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
